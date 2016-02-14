@@ -1,11 +1,20 @@
-function mouseOn (e) {
-  var hiddenItem = e.currentTarget.children[0];
-  $(hiddenItem).fadeIn('fast').toggleClass("hidden");
+function changeProject(e) {
+  var data = e.currentTarget.dataset.key;
+
+  var selectedList = $(e.currentTarget);
+  var selectedItem;
+  items.each(function (idx, el) {
+    if (el.dataset.key === data) { selectedItem = $(el); }
+  });
+
+  list.removeClass('list-selected');
+  items.addClass('hidden');
+
+  selectedList.addClass('list-selected');
+  selectedItem.removeClass('hidden');
 }
 
-function mouseOff (e) {
-  var hiddenItem = e.currentTarget.children[0];
-  $(hiddenItem).fadeOut('fast').toggleClass("hidden");
-}
+var list = $('.list li');
+var items = $('.project-content > li');
 
-$('.project-list li').hover(mouseOn, mouseOff);
+list.on('click', changeProject);
