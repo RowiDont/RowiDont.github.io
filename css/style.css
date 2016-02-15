@@ -145,8 +145,6 @@ header h2 {
 
 .projects {
   padding: 20px;
-  /*text-align: center;*/
-  /*background: rgb(246, 246, 246);*/
 }
 
 .project-list {
@@ -277,6 +275,7 @@ hr {
   font-size: 2em;
   padding-top: 5px;
   display: inline-block;
+  margin-right: 20px;
 }
 
 .project-item span {
@@ -298,7 +297,7 @@ hr {
   /*text-align: center;*/
   /*padding: 10px;*/
   /*position: absolute;*/
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   margin-top: 15px;
   display: inline-block;
 }

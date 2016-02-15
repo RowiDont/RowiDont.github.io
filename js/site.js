@@ -18,3 +18,7 @@ var list = $('.list li');
 var items = $('.project-content > li');
 
 list.on('click', changeProject);
+
+console.log("A clean console is indicative of clean code.");
+console.log("I like writing clean code.");
+console.log("If that's important to you too, please reach out at rafiepatel@gmail.com"); 
