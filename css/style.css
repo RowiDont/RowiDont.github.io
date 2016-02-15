@@ -124,7 +124,7 @@ header {
   text-align: center;
 }
 
-header img {
+header > img {
   width: 125px;
   border-radius: 50%;
   margin: auto;
@@ -143,35 +143,36 @@ header h2 {
   margin: 15px;
 }
 
+header span {
+  margin-right: 10px;
+}
+
+header a > img {
+  height: 30px;
+  width: auto;
+}
+
+header em {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+header a {
+  font-size: 20px;
+  color: rgb(16, 62, 115);
+}
+
+header a:hover {
+  color: rgb(51, 111, 180);
+}
+
 .projects {
   padding: 20px;
 }
 
 .project-list {
   vertical-align: top;
-}
-
-.profile-item {
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  background: #eee;
-  transition: background-color 0.5s ease;
-}
-
-.profile-item:hover {
-  background-color: rgb(255, 200, 200);
-  /*color: white;*/
-
-}
-
-.selected {
-  background-color: rgb(255, 112, 112);
-  color: white;
 }
 
 hr {
@@ -206,7 +207,6 @@ hr {
 }
 
 .logos {
-  padding-top: 15px;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
@@ -308,6 +308,14 @@ hr {
 
 .sources a:hover {
   background: rgb(51, 111, 180);
+}
+
+footer {
+  font-size: 14px;
+  margin-top: 25px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
 }
 
 .hidden {
