@@ -199,6 +199,12 @@ hr {
   padding: 10px 0;
 }
 
+.info p {
+  font-size: 14px;
+  padding: 10px 0;
+  color: rgb(48, 118, 182);
+}
+
 
 .skills {
   max-width: 900px;
