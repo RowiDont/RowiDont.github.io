@@ -88,6 +88,11 @@ input[type="submit"] {
   .projects {
     text-align: center !important;
   }
+
+  .list h3:after {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -98,7 +103,6 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 1200px) {
-
   .skills, .projects {
     max-width: 900px;
     margin: auto;
@@ -247,6 +251,13 @@ hr {
   font-size: 1.5em;
 }
 
+.list h3:after {
+  content: "❯";
+  font-size: 80%;
+  color: gray;
+  margin-left: 10px;
+}
+
 .list p {
   font-size: 0.8em;
   color: #b0b0b0;
@@ -275,6 +286,10 @@ hr {
   padding-left: 60px;
   width: calc(70% - 60px);
   vertical-align: top;
+}
+
+.project-content {
+  margin-top: -5px;
 }
 
 .project-content ul {
