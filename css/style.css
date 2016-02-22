@@ -34,10 +34,7 @@ body {
   color: rgb(34, 34, 34);
 }
 
-input[type="password"],
-input[type="email"],
-input[type="text"],
-input[type="submit"],
+input,
 textarea,
 button {
   -webkit-appearance: none;
