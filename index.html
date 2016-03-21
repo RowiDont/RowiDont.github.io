@@ -65,7 +65,7 @@
             <li data-key="code-intensive">
               <h3>Ruby ORM</h3>
               <p>
-                Metaprogramming - Recreating Rails' Active Record ORM
+                Lightweight ORM for persisting state in Ruby
               </p>
             </li>
           </ul>
@@ -83,16 +83,17 @@
                 <span>(Rails, React/Flux, JavaScript, CSS)</span>
                 <p>
                   <b>What is it? </b>A clone of OpenTable's web platform for restaurant search and reservations.
-                  Built from the ground up on a Rails backend and React frontend, using Flux design patterns.
+                  Built from the ground up on a Rails backend and React frontend, using a Flux architecture.
                 </p>
                 <ul>
-                  <li>Implements custom validation logic to identify time conflicts and prevent double bookings</li>
-                  <li>Deploys Omniauth, enabling log-in and account creation with Google accounts</li>
-                  <li>Searches in real-time with AJAX, delivering results across categories with a backend filter</li>
-                  <li>Integrates AWS cloud storage for profile customization with user uploads</li>
+                  <li>Implements a custom algorithm to avoid time conflicts and prevent double bookings</li>
+                  <li>Integrates AWS cloud storage to reduce overhead and allow for scale</li>
+                  <li>Searches in real-time with AJAX, delivering cross category results</li>
+                  <li>Deploys OmniAuth, lowering friction for new users by providing a seamless UX</li>
+                  <li>Minimizes database calls on the back end through SQL query optimization</li>
                 </ul>
                 <hr>
-                <video src="video/TableCast.mp4" muted autoplay loop poster="images/table.jpg"></video>
+                <video src="video/TableCast.webm" muted autoplay loop poster="images/table.jpg"></video>
               </div>
             </li>
             <li data-key="browser-game" class="project-item hidden">
@@ -101,21 +102,21 @@
                   <h3>Canvas Force 2016</h3>
                   <div class="sources">
                     <a target="_blank" href="https://github.com/RowiDont/canvas-force-2016">github</a>
-                    <a target="_blank" href="http://rowidont.github.io/canvas-force-2016/">live</a>
+                    <a target="_blank" href="http://rafipatel.com/canvas-force-2016/">live</a>
                   </div>
                 </div>
-                <span>(JavaScript, Canvas)</span>
+                <span>(Node, HTML5 Canvas)</span>
                 <p>
                   <b>What is it? </b>A game created on the Canvas API, that gives you the keys to a spaceship
                   unfortunately stuck in a desert populated by oddly large and accurate tanks.
                 </p>
                 <ul>
+                  <li>Connects with a Node server and JSON API to store and retrieve high scores</li>
+                  <li>Uses sprites for seamless, high quality animations with reduced load time</li>
                   <li>Orients sprites to focus on the player’s ship with trigonometry adapted for Canvas</li>
-                  <li>Enables positionally linked sprites through a Sprite object and overloaded render function</li>
-                  <li>Animates sprites by shifting the index of the image frame as a function of time</li>
                 </ul>
                 <hr>
-                <video src="video/browser-game.mp4" muted autoplay loop poster="images/canvas_force.jpg"></video>
+                <video src="video/browser-game.webm" muted autoplay loop poster="images/canvas_force.jpg"></video>
               </div>
             </li>
             <li data-key="code-intensive" class="project-item hidden">
@@ -123,17 +124,15 @@
                 <div class="project-item-header">
                   <h3>Ruby ORM</h3>
                   <div class="sources">
-                    <a id="RubyRM" target="_blank" href="https://github.com/RowiDont/RubyORM">github</a>
+                    <a id="RubyRM" target="_blank" href="https://github.com/RowiDont/RubyRM">github</a>
                   </div>
                 </div>
                 <span>(Ruby, Metaprogramming)</span>
                 <p>
-                  <b>What is it? </b>A model that can be used for data that must persist,
-                  as well as the logic that surrounds interaction with that data. It uses object-relational mapping (ORM)
-                  to persist Ruby instances in a SQL database.
+                  <b>What is it? </b>A lightweight object-relational mapping (ORM) tool for persisting state in Ruby.
                 </p>
                 <ul>
-                  <li>Inflects user input to create sensible SQL requests ranging from the model to association level</li>
+                  <li>Abstracts  SQL queries into an Object Oriented Design with metaprogramming</li>
                 </ul>
                 <hr>
                 <img src="images/ARLite.png"></img>
