@@ -18,5 +18,3 @@ var list = $('.list li');
 var items = $('.project-content > li');
 
 list.on('click', changeProject);
-
-console.log("If you're looking for passionate web developer, please reach out at rafiepatel@gmail.com");
