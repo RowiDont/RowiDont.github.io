@@ -123,6 +123,33 @@ header a:hover {
   color: rgb(51, 111, 180);
 }
 
+#expand {
+  font-size: 0.7em;
+  padding-top: 10px;
+  margin: 0;
+  display: block;
+}
+
+#expand[data-key='expand']:before {
+  content: '(learn more about me...)';
+}
+
+#expand[data-key='hide']:before {
+  content: '(hide...)';
+}
+
+#bio {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  text-align: left;
+  padding: 0 20px 0 20px;
+  color: rgb(89, 121, 158);
+}
+
+#bio p {
+  margin-bottom: 15px;
+}
+
 .projects {
   padding: 20px;
 }
