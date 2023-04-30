@@ -147,7 +147,7 @@ hr {
 }
 
 .info p {
-  font-size: 14px;
+  font-size: 1em;
   padding: 10px 0;
   color: rgb(48, 118, 182);
 }
@@ -185,7 +185,6 @@ hr {
 }
 
 .list {
-  /*float: left;*/
   display: inline-block;
   width: 28%;
 }
@@ -259,11 +258,11 @@ hr {
 }
 
 .project-item li {
-  font-size: 0.85em;
-  text-indent: -1em;
+  font-size: 0.95em;
   padding-left: 1em;
   padding: 7px 0;
   color: rgb(77, 77, 77);
+  list-style-position: outside;
 }
 
 .project-item .sources {
@@ -271,12 +270,13 @@ hr {
   display: inline-block;
 }
 
-.sources a {
+.sources a, .sources div {
   padding: 5px 10px;
   background: rgb(16, 62, 115);
   transition: background 0.4s ease;
   color: white;
   margin-right: 5px;
+  display: inline-block;
 }
 
 .sources a:hover {
